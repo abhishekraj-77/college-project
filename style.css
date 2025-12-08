@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+}
+
+/* NAVBAR */
+.navbar {
+    height: 60px;
+    background: white;
+    border-bottom: 1px solid #dedede;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: sticky;
+    top: 0;
+}
+
+.nav-left, .nav-center, .nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon {
+    font-size: 22px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo span {
+    font-size: 10px;
+    vertical-align: super;
+}
+
+.nav-center input {
+    width: 350px;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.search-btn {
+    padding: 8px 12px;
+    background: #eee;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.nav-item {
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.profile {
+    background: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50%;
+}
+
+/* MAIN LAYOUT */
+.main {
+    display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 200px;
+    background: white;
+    height: calc(100vh - 60px);
+    border-right: 1px solid #ddd;
+    padding: 10px;
+    position: sticky;
+    top: 60px;
+}
+
+.side-item {
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.side-item:hover, .side-item.active {
+    background: #f0f0f0;
+}
+
+.side-title {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #606060;
+}
+
+/* CONTENT */
+.content {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+/* CATEGORY TABS */
+.tabs {
+    display: flex;
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 10px 20px;
+    background: #eee;
+    margin-right: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.tab.active {
+    background: black;
+    color: white;
+}
+
+/* VIDEO GRID */
+.videos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.video-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+/* THUMBNAIL */
+.thumb {
+    height: 160px;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+
+.thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* VIDEO INFO */
+.video-info {
+    padding: 10px;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.meta {
+    font-size: 13px;
+    color: #606060;
+}
